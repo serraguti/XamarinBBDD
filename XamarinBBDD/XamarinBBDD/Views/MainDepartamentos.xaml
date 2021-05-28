@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinBBDD.Views.MainDepartamentos">
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <StackLayout>
+                <Label Text="Id Departamento"/>
+                <Entry x:Name="cajaid" />
+                <Label Text="Nombre"/>
+                <Entry x:Name="cajanombre" />
+                <Label Text="Localidad"/>
+                <Entry x:Name="cajalocalidad" />
+                <Button x:Name="labelMensaje" Text=""/>
+                <Button x:Name="botoncrear" Text="Crear BBDD"/>
+                <Button x:Name="botoninsertar" Text="Insertar"/>
+                <Button x:Name="botonmostrar" Text="Mostrar Departamentos"/>
+                <Button x:Name="botonmodificar" Text="Modificar"/>
+                <Button x:Name="botoneliminar" Text="Eliminar"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

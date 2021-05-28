@@ -54,7 +54,7 @@ namespace XamarinBBDD.Repositories
         {
             Departamento departamento =
                 this.FindDepartamento(id);
-            this.cn.Delete<Departamento>(departamento);
+            this.cn.Delete(departamento);
         }
 
         public void UpdateDepartamento(int id, String nombre

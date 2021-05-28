@@ -12,7 +12,19 @@
                    FontSize="40" TextColor="Violet"
                 VerticalOptions="Start" 
                 HorizontalOptions="CenterAndExpand" />
-            
+            <ListView ItemsSource="{Binding Departamentos}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding IdDepartamento}"/>
+                                <Label Text="{Binding Nombre}"/>
+                                <Label Text="{Binding Localidad}"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
