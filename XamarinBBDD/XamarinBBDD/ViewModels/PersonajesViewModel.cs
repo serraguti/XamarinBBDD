@@ -17,8 +17,13 @@ namespace XamarinBBDD.ViewModels
         public PersonajesViewModel(RepositoryPersonajes repo)
         {
             this.repo = repo;
+            this.LoadPersonajes();
+        }
+
+        public void LoadPersonajes()
+        {
             List<Personaje> lista = this.repo.GetPersonajes();
-            this.Personajes = 
+            this.Personajes =
                 new ObservableCollection<Personaje>(lista);
         }
 
