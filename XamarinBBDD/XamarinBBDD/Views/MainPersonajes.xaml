@@ -2,12 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinBBDD.Views.MainPersonajes"
-             xmlns:viewmodels="clr-namespace:XamarinBBDD.ViewModels">
+             xmlns:viewmodels="clr-namespace:XamarinBBDD.ViewModels"
+             xmlns:local="clr-namespace:XamarinBBDD">
     <ContentPage.Content>
-        <StackLayout>
-            <StackLayout.BindingContext>
-                <viewmodels:PersonajesViewModel/>
-            </StackLayout.BindingContext>
+        <StackLayout BindingContext="{Binding Source={x:Static local:App.ServiceLocator}, Path=PersonajesViewModel}">
             <Button Text="Edicion" 
                     HorizontalOptions="FillAndExpand"
                     Command="{Binding Edicion}"/>

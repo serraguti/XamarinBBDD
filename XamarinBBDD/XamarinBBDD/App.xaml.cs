@@ -8,12 +8,19 @@ namespace XamarinBBDD
 {
     public partial class App : Application
     {
-
+        private static ServiceIoC _ServiceLocator;
+        public static ServiceIoC ServiceLocator
+        {
+            get
+            {
+                return _ServiceLocator = _ServiceLocator
+                    ?? new ServiceIoC();
+            }
+        }
 
         public App()
         {
             InitializeComponent();
-            ServiceIoC serviceIoC = new ServiceIoC();
             MainPage = new MainPersonajes();
         }
 

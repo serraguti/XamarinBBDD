@@ -26,5 +26,14 @@ namespace XamarinBBDD.Services
             //CREAMOS EL CONTENEDOR
             this.container = builder.Build();
         }
+
+        public PersonajesViewModel PersonajesViewModel
+        {
+            get
+            {
+                return
+                    this.container.Resolve<PersonajesViewModel>();
+            }
+        }
     }
 }
