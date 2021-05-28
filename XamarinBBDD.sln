@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinBBDD.Android", "Xama
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinBBDD.iOS", "XamarinBBDD\XamarinBBDD.iOS\XamarinBBDD.iOS.csproj", "{3B8D3026-454C-46CB-9FBE-F00CDB895CAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinBBDD", "XamarinBBDD\XamarinBBDD\XamarinBBDD.csproj", "{8AF7EF73-95DD-4C9F-BE9E-EC774327273F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XamarinBBDD", "XamarinBBDD\XamarinBBDD\XamarinBBDD.csproj", "{8AF7EF73-95DD-4C9F-BE9E-EC774327273F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
