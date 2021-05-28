@@ -46,6 +46,7 @@ namespace XamarinBBDD.Repositories
                 personaje.IdPersonaje = this.GetMaxId();
                 personaje.Nombre = nombre;
                 personaje.Serie = serie;
+                this.realmConnection.Add(personaje);
                 transaction.Commit();
             }
         }

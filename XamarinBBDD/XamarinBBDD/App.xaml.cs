@@ -11,7 +11,7 @@ namespace XamarinBBDD
         {
             InitializeComponent();
 
-            MainPage = new MainDepartamentos();
+            MainPage = new MainPersonajes();
         }
 
         protected override void OnStart()

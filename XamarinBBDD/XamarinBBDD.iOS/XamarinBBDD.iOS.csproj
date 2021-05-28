@@ -67,6 +67,9 @@
     <Compile Include="AppDelegate.cs" />
     <Compile Include="SQLiteClient.cs" />
     <None Include="Entitlements.plist" />
+    <None Include="FodyWeavers.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Info.plist" />
     <Compile Include="MisContactos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -140,5 +143,8 @@
       <Project>{0D22E0BC-C935-462B-8488-109ECE63ED85}</Project>
       <Name>XamarinBBDD</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FodyWeavers.xml" />
   </ItemGroup>
 </Project>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinBBDD.Views.MainPersonajes"
+             xmlns:viewmodels="clr-namespace:XamarinBBDD.ViewModels">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout.BindingContext>
+                <viewmodels:PersonajesViewModel/>
+            </StackLayout.BindingContext>
+            <Button Text="Edicion" 
+                    HorizontalOptions="FillAndExpand"
+                    Command="{Binding Edicion}"/>
+            <Button Text="Cargar personajes"
+                    HorizontalOptions="FillAndExpand"
+                    Command="{Binding CargarPersonajes}"/>
+            <ListView ItemsSource="{Binding Personajes}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding IdPersonaje}"/>
+                                <Label Text="{Binding Nombre}"
+                                       TextColor="Blue"/>
+                                <Label Text="{Binding Serie}"
+                                       TextColor="Red"/>
+                            </StackLayout>                            
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
